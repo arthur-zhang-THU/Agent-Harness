@@ -1,4 +1,4 @@
-# Pico Review Pack
+# Swift Review Pack
 
 ## Project pitch
 
@@ -6,11 +6,11 @@ A lightweight local coding agent harness for repository-grounded engineering tas
 
 ## Architecture map
 
-- `pico.cli` wires configuration, provider clients, workspace context, and the runtime.
-- `pico.runtime.Pico` coordinates the agent control surface.
-- `pico.context_manager` builds bounded model context from prefix, memory, history, and the current request.
-- `pico.tools` defines the explicit tool allowlist used by the runtime.
-- `pico.run_store` writes per-run artifacts for review and replay.
+- `swift.cli` wires configuration, provider clients, workspace context, and the runtime.
+- `swift.runtime.Swift` coordinates the agent control surface.
+- `swift.context_manager` builds bounded model context from prefix, memory, history, and the current request.
+- `swift.tools` defines the explicit tool allowlist used by the runtime.
+- `swift.run_store` writes per-run artifacts for review and replay.
 
 ## Benchmark evidence
 
@@ -18,6 +18,6 @@ Benchmark runs should preserve reproducibility metadata, task rows, summary coun
 
 ## Sample run artifact list
 
-- `.pico/runs/<run_id>/task_state.json`
-- `.pico/runs/<run_id>/trace.jsonl`
-- `.pico/runs/<run_id>/report.json`
+- `.swift/runs/<run_id>/task_state.json`
+- `.swift/runs/<run_id>/trace.jsonl`
+- `.swift/runs/<run_id>/report.json`
